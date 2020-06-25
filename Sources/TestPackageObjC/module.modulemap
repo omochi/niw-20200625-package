@@ -1,0 +1,3 @@
+module TestPackageObjC {
+    export *
+}

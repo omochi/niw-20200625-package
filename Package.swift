@@ -11,11 +11,21 @@ let package = Package(
             targets: [
                 "TestPackage"
             ]
+        ),
+        .library(
+            name: "TestPackageObjC",
+            targets: [
+                "TestPackageObjC"
+            ]
         )
     ],
     targets: [
         .target(
             name: "TestPackage"
+        ),
+        .target(
+            name: "TestPackageObjC",
+            dependencies: ["TestPackage"]
         )
     ]
 )
